@@ -61,7 +61,8 @@ header {
 }
 
 /* Home button active state - cyan */
-.nav-links a.active[href="/"] {
+.nav-links a.active[href="."],
+.nav-links a.active[href="../"] {
   background: linear-gradient(135deg, rgba(0, 255, 255, 0.25), rgba(0, 255, 255, 0.15));
   border: 1px solid rgba(0, 255, 255, 0.6);
   text-shadow: 0 0 12px #0ff, 0 0 22px #0ff;
@@ -69,7 +70,7 @@ header {
 }
 
 /* About button active state - dark purple */
-.nav-links a.active[href="/about"] {
+.nav-links a.active[href="about"] {
   background: linear-gradient(135deg, rgba(138, 43, 226, 0.25), rgba(75, 0, 130, 0.15));
   border: 1px solid rgba(138, 43, 226, 0.6);
   text-shadow: 0 0 12px #8a2be2, 0 0 22px #8a2be2;
