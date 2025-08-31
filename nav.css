@@ -31,7 +31,7 @@ header {
   color: #fff;
   text-decoration: none;
   font-size: 1rem;
-  padding: 1rem 2rem;
+  padding: 0.7rem 1.3rem;
   border-radius: 25px;
   transition: all 0.4s ease;
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
@@ -40,6 +40,12 @@ header {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
   border: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  
+  /* Ensure proper sizing and prevent text wrapping */
+  display: inline-block;
+  white-space: nowrap;
+  box-sizing: border-box;
+  min-width: 90px;
 }
 
 .nav-links a:hover {
@@ -51,11 +57,23 @@ header {
 }
 
 .nav-links a.active {
+  transform: scale(1.02);
+}
+
+/* Home button active state - cyan */
+.nav-links a.active[href="index.html"] {
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.25), rgba(0, 255, 255, 0.15));
+  border: 1px solid rgba(0, 255, 255, 0.6);
+  text-shadow: 0 0 12px #0ff, 0 0 22px #0ff;
+  box-shadow: 0 8px 25px rgba(0, 255, 255, 0.4);
+}
+
+/* About Me button active state - dark purple */
+.nav-links a.active[href="about.html"] {
   background: linear-gradient(135deg, rgba(138, 43, 226, 0.25), rgba(75, 0, 130, 0.15));
   border: 1px solid rgba(138, 43, 226, 0.6);
   text-shadow: 0 0 12px #8a2be2, 0 0 22px #8a2be2;
   box-shadow: 0 8px 25px rgba(138, 43, 226, 0.4);
-  transform: scale(1.02);
 }
 
 /* Mobile styles for navigation */
