@@ -1,0 +1,19 @@
+{
+  "name": "ayaan-website",
+  "version": "1.0.0",
+  "description": "Ayaan's personal website",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=3000 --open=/index.html",
+    "dev": "live-server --port=3000 --open=/index.html --watch=.",
+    "build": "echo 'Build completed - files are ready for deployment'",
+    "serve": "http-server -p 3000 -o"
+  },
+  "keywords": ["website", "portfolio"],
+  "author": "Ayaan",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "http-server": "^14.1.1"
+  }
+}
